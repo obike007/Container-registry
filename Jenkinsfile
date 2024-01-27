@@ -2,7 +2,7 @@ pipeline {
   agent any 
 
   environment {
-    SERVICE_NAME        = "Container-registry"
+    SERVICE_NAME        = "container-registry"
     ORGANIZATION_NAME   = "obike007"
     DOCKERHUB_USERNAME  = "obike007"
     REGISTRY_TAG        = "${DOCKERHUB_USERNAME}/${ORGANISATION_NAME}-${SERVICE_NAME}:${BUILD_ID}"
